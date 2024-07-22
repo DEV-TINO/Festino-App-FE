@@ -36,11 +36,12 @@ export const useReservationStore = defineStore('reservationStore', () => {
     try {
       const res = await axios.post(`${HOST}/main/reservation`, payload);
       closeReserveModal();
-      if (res.data.success) openCompleteReserveModal();
-      if (!res.data.success) openFailReserveModal();
+      if (res.data.success) {
+        if (res.data.reservationInfo.messageStatus === 'SEND_FAIL') return openMessageFailModal();
+        return openCompleteReserveModal();
+      }
+      if (!res.data.success) return openFailReserveModal();
       getAllNightBooth();
-      // TODO: 메시지 실패일 때 띄울 모달
-      // openMessageFailModal();
     } catch (error) {
       router.push({ name: 'error', params: { page: 'main' } });
       console.error(error);
