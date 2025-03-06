@@ -77,8 +77,7 @@ watchEffect(() => {
       } `"
       ref="sliderContainer"
     >
-      >
-      <div class="flex flex-row w-[200%]">
+      <div class="pt-6 flex flex-row w-[200%]">
         <Reservation />
         <SearchReservation />
       </div>
