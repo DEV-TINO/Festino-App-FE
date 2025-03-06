@@ -8,7 +8,7 @@ export default {
         'white-opacity': 'rgba(255, 255, 255, 0.68)',
         primary: {
           900: {
-            DEFAULT: '#0073F0',
+            DEFAULT: '#FF98D4',
             light: 'rgba(0, 115, 240, 0.2)',
             lighter: 'rgba(0, 115, 240, 0.12)',
             lightest: 'rgba(0, 115, 240, 0.06)',
@@ -22,7 +22,7 @@ export default {
       textColor: {
         primary: {
           900: {
-            DEFAULT: '#0073F0',
+            DEFAULT: '#FF98D4',
             light: 'rgba(0, 115, 240, 0.2)',
             'light-68': 'rgba(0, 115, 240, 0.68)',
             'light-16': 'rgba(0, 115, 240, 0.16)',
@@ -33,7 +33,7 @@ export default {
             light: 'rgba(240, 14, 0, 0.12)',
           },
           700: {
-            DEFAULT: '#3082F6',
+            DEFAULT: '#FF85CC',
             light: 'rgba(48, 130, 246, 0.4)',
           },
           600: '#54A6FF',
@@ -143,8 +143,8 @@ export default {
       },
       borderColor: (theme) => ({
         ...theme('textColor'),
-        primary: '#D6E9FD',
-        'primary-900': theme('textColor.primary.900'),
+        primary: 'rgba(255, 181, 224, 0.5)',
+        'primary-900':'#FF98D4',
         'primary-700': 'rgba(48, 130, 246, 0.6)',
         'primary-700-default': theme('textColor.primary.700'),
         'secondary-300': theme('textColor.secondary.300'),
