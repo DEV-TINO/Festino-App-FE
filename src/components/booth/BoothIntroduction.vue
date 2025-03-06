@@ -42,7 +42,7 @@ const getBoothImageProps = (boothImage) => {
         <div class="w-[222px] h-full flex flex-col justify-between pr-1">
           <div>
             <div
-              class="px-2 py-1 w-fit flex justify-center text-center rounded-3.5xl border border-primary-900 text-primary-900 text-3xs font-pretendard font-semibold"
+              class="px-2 py-1 w-fit flex justify-center text-center rounded-3.5xl border border-primary text-primary-900 text-3xs font-pretendard font-semibold"
             >
               #{{ booth.adminCategory }}
             </div>
