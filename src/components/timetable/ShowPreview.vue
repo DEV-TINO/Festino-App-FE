@@ -34,7 +34,7 @@ onMounted(async () => {
     v-bind="$attrs"
   >
     <div class="flex pt-3 w-full px-3 justify-evenly gap-1 overflow-x-auto reserve-container">
-      <div class="flex flex-col items-center cursor-pointer" v-for="show in showData" :key="show" @click="handleClickOpenModal(show)">
+      <div class="flex flex-col items-center cursor-pointer px-1" v-for="show in showData" :key="show" @click="handleClickOpenModal(show)">
         <div :style="getImage(show)" class="border-2 border-primary bg-cover bg-center w-[86px] h-[86px] sm:w-[100px] sm:h-[100px] rounded-full"></div>
         <div class="text-xs font-normal pt-2">{{ show.showStartTime }}</div>
         <div class="text-primary-700 font-medium">{{ show.performer }}</div>
