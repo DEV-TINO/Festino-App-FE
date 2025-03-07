@@ -43,7 +43,7 @@ watchEffect(() => {
 
 <template>
   <div class="relative">
-    <div class="dynamic-padding mt-[13px] h-auto w-full rounded-3xl bg-inherit z-50 absolute">
+    <div class="dynamic-padding mt-[13px] h-auto w-full rounded-3xl bg-inherit z-20 absolute">
       <div class="flex gap-[30px]">
         <div
           class="w-[86px] h-[32px] flex flex-col items-center justify-between cursor-pointer relative"
