@@ -57,9 +57,13 @@ export default {
           DEFAULT: '#FF6D6D',
           light: '#FBE4E4'
         },
-        'warn': {
+        'close': {
           DEFAULT: "#F00E00",
           light: 'rgba(240, 14, 0, 0.12)'
+        },
+        'open': {
+          DEFAULT: "#0073F0",
+          light: 'rgba(0, 115, 240, 0.12)'
         },
       },
       textColor: (theme) => ({
