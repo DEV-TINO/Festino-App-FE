@@ -136,6 +136,9 @@ export default {
         '5xl': '0 0 20px rgba(0, 0, 0, 0.16)',
         '6xl': '0 0 12px rgba(0, 0, 0, 0.06)',
       },
+      dropShadow: {
+        'title': '0 2px 2px rgba(255, 124, 196, 1)',
+      },
     },
     screens: {
       xs: '405px',

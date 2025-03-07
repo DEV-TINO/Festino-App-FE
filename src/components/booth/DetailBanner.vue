@@ -25,7 +25,7 @@ const getSlogan = () => {
         @click="handleClickBoothDetailBackArrow()"
         class="z-4 bg-back-arrow-white w-[18px] h-[18px] bg-no-repeat text-xl absolute top-[24px] left-[24px] bg-cover pointer-events-auto cursor-pointer"
       ></div>
-      <div class="absolute w-auto h-auto dynamic-top dynamic-padding">
+      <div class="drop-shadow-title absolute w-auto h-auto dynamic-top dynamic-padding">
         <div
           class="text-white font-jalnan2 text-md xs:text-md sm:text-[19px]"
         >
