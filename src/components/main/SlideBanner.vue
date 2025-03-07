@@ -72,32 +72,32 @@ onMounted(() => {
     <div class="flex transition-transform duration-500 ease" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
       <div class="min-w-full min-h-[178px] bg-slide-banner-1 bg-cover bg-no-repeat relative" @click="handleClickMoveTabling()">
         <div class="absolute top-5 left-4 flex flex-col items-start">
-          <div class="px-[18px] py-0.5 font-pretendard text-xs text-primary-700 font-bold bg-white rounded-full">이제 기다리지 마세요!</div>
+          <div class="px-[18px] py-0.5 font-pretendard text-xs text-white border-2 border-white font-bold rounded-full">이제 기다리지 마세요!</div>
           <div class="pt-1 px-0.5 font-pretendard text-base text-white">빠른 입장을 도와주는</div>
           <div class="px-0.5 leading-none font-bold font-pretendard text-base text-white">학과 주점 예약 시스템 '테이블링'</div>
         </div>
         <div class="absolute bottom-4 left-4">
-          <div class="text-white font-pretendard font-bold text-xs px-4 py-1.5 rounded-full border-white border-2 cursor-pointer">테이블링 탭으로 이동 -></div>
+          <div class="bg-white text-primary-700 font-pretendard font-bold text-xs px-4 py-1.5 rounded-full cursor-pointer">테이블링 탭으로 이동 -></div>
         </div>
       </div>
       <div class="min-w-full min-h-[178px] bg-slide-banner-2 bg-cover bg-no-repeat relative" @click="handleClickMoveBooth()">
         <div class="absolute top-5 right-4 flex flex-col items-end">
-          <div class="px-[18px] py-0.5 font-pretendard text-xs text-primary-700 font-bold bg-white rounded-full">봄맞이 동아리 홍보전</div>
+          <div class="px-[18px] py-0.5 font-pretendard text-xs text-white border-2 border-white font-bold rounded-full">봄맞이 동아리 홍보전</div>
           <div class="pt-1 px-0.5 font-pretendard text-base text-white">티노가 알려줄게!</div>
           <div class="px-0.5 leading-none font-bold font-pretendard text-base text-white">봄맞이 동아리 홍보부스</div>
         </div>
         <div class="absolute bottom-4 right-4">
-          <div class="text-white font-pretendard font-bold text-xs px-4 py-1.5 rounded-full border-white border-2 cursor-pointer">동아리 부스 탭으로 이동 -></div>
+          <div class="bg-white text-primary-700 font-pretendard font-bold text-xs px-4 py-1.5 rounded-full border-2 cursor-pointer">동아리 부스 탭으로 이동 -></div>
         </div>
       </div>
       <div class="min-w-full min-h-[178px] bg-slide-banner-3 bg-cover bg-no-repeat relative" @click="handleClickMoveTimeTable()">
         <div class="absolute top-5 left-4 flex flex-col items-start">
-          <div class="px-[18px] py-0.5 font-pretendard text-xs text-primary-700 font-bold bg-white rounded-full">봄맞이 동아리 홍보전 공연</div>
+          <div class="px-[18px] py-0.5 font-pretendard text-xs text-white border-2 border-white font-bold rounded-full">봄맞이 동아리 홍보전 공연</div>
           <div class="pt-1 px-0.5 font-pretendard text-base text-white">한눈에 보는 축제 공연 정보!</div>
           <div class="px-0.5 leading-none font-bold font-pretendard text-base text-white">'동아리 공연 타임테이블'</div>
         </div>
         <div class="absolute bottom-4 left-4">
-          <div class="text-white font-pretendard font-bold text-xs px-4 py-1.5 rounded-full border-white border-2 cursor-pointer">타임테이블 탭으로 이동 -></div>
+          <div class="bg-white text-primary-700 font-pretendard font-bold text-xs px-4 py-1.5 rounded-full border-2 cursor-pointer">타임테이블 탭으로 이동 -></div>
         </div>
       </div>
     </div>
