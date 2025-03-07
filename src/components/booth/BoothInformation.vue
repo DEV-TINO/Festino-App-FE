@@ -101,7 +101,7 @@ const handleClickInstagram = () => {
 </script>
 
 <template>
-  <div class="w-full h-3 bg-primary-50"></div>
+  <div class="w-full h-3 bg-secondary-700-light-3"></div>
   <div class="relative pt-[2.33%] pl-[4.65%] pr-[4.65%] pb-9">
     <div class="mt-4">
       <div

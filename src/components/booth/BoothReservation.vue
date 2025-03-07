@@ -11,7 +11,7 @@ const handleRoutertoReserve = () => {
 </script>
 
 <template>
-  <div class="w-full h-3 mb-7 bg-primary-50"></div>
+  <div class="w-full h-3 mb-7 bg-secondary-700-light-3"></div>
   <div class="dynamic-padding">
     <div class="font-pretendard text-2xl font-semibold pb-5">현재 대기중</div>
     <div
