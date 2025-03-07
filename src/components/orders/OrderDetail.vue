@@ -16,23 +16,23 @@ const props = defineProps({
 const orderStatus = [
   {
     text: '입금대기',
-    color: 'bg-third-100',
-    bgColor: 'bg-third-500',
+    color: 'bg-waiting',
+    bgColor: 'bg-waiting-light',
   },
   {
     text: '조리중',
-    color: 'bg-third-200',
-    bgColor: 'bg-third-600',
+    color: 'bg-cooking',
+    bgColor: 'bg-cooking-light',
   },
   {
     text: '조리완료',
-    color: 'bg-third-300',
-    bgColor: 'bg-third-700',
+    color: 'bg-prepared',
+    bgColor: 'bg-prepared-light',
   },
   {
     text: '주문취소',
-    color: 'bg-third-400',
-    bgColor: 'bg-secondary-50',
+    color: 'bg-cancel',
+    bgColor: 'bg-secondary-700-light-3',
   },
 ];
 

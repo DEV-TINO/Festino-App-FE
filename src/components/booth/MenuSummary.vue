@@ -12,7 +12,7 @@ const formattedSubMenu = computed(() => subMenu.value.join(', '));
 
 <template>
   <div class="dynamic-padding pb-8">
-    <div class="w-full h-auto bg-primary-100 rounded-2xl py-4">
+    <div class="w-full h-auto bg-primary-50 rounded-2xl py-4">
       <div v-if="formattedMainMenu" class="flex items-center px-4 pb-1">
         <div
           class="flex justify-center items-center min-w-[72px] w-[72px] h-[26px] rounded-full bg-secondary-50 text-secondary-500 font-pretendard font-semibold text-xs"

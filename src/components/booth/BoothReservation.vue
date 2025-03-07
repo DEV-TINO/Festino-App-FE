@@ -11,7 +11,7 @@ const handleRoutertoReserve = () => {
 </script>
 
 <template>
-  <div class="w-full h-3 mb-7 bg-secondary-200"></div>
+  <div class="w-full h-3 mb-7 bg-primary-50"></div>
   <div class="dynamic-padding">
     <div class="font-pretendard text-2xl font-semibold pb-5">현재 대기중</div>
     <div
@@ -29,7 +29,7 @@ const handleRoutertoReserve = () => {
     </div>
     <button
       @click="handleRoutertoReserve()"
-      class="w-full h-auto py-4 mt-3 mb-3 shadow-3xl border-1 border-primary rounded-full text-primary-900 font-pretendard text-base active:text-white active:bg-primary-900"
+      class="w-full h-auto py-4 mt-3 mb-3 shadow-3xl border-1 border-primary-900-light-68 rounded-full text-primary-900 font-pretendard text-base active:text-white active:bg-primary-900"
     >
       예약하기
     </button>

@@ -2,7 +2,6 @@
 import { ref, onMounted, onUnmounted, watch } from 'vue';
 import { useGetBoothDataStore } from '@/stores/booths/boothDataStore';
 import { storeToRefs } from 'pinia';
-import { api } from '@/utils/api';
 
 const { booth, imageList } = storeToRefs(useGetBoothDataStore());
 const currentIndex = ref(0);
@@ -102,7 +101,7 @@ const handleClickInstagram = () => {
 </script>
 
 <template>
-  <div class="w-full h-3 bg-secondary-200"></div>
+  <div class="w-full h-3 bg-primary-50"></div>
   <div class="relative pt-[2.33%] pl-[4.65%] pr-[4.65%] pb-9">
     <div class="mt-4">
       <div

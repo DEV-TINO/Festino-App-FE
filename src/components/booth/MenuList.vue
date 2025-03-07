@@ -8,7 +8,7 @@ const { booth } = storeToRefs(useGetBoothDataStore());
 </script>
 
 <template>
-  <div class="w-full h-3 mb-7 bg-secondary-200"></div>
+  <div class="w-full h-3 mb-7 bg-primary-50"></div>
   <div class="mb-[28px]">
     <MenuSummary v-if="booth.adminCategory == '야간부스'" />
     <MenuInformation />

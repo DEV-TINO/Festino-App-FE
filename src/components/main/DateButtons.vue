@@ -36,7 +36,7 @@ onMounted(() => {
         :class="
           day == date
             ? 'bg-primary-900 text-white font-bold'
-            : 'text-primary-900 font-normal border-primary border-1'
+            : 'text-primary-900 font-normal border-primary-900-light-68 border-1'
         "
         @click="handleClickDateButton(date)"
       >

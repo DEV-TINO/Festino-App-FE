@@ -26,7 +26,7 @@ const getImage = () => {
     <div class="w-full flex justify-between px-5 pt-5">
       <div class="w-[20px] h-[20px]"></div>
       <div
-        class="text-xs text-primary-700 rounded-full w-[80px] h-[22px] flex justify-center items-center border-2 border-primary font-medium"
+        class="text-xs text-primary-700 rounded-full w-[80px] h-[22px] flex justify-center items-center border-2 border-primary-900-light-68 font-medium"
       >
         교내 동아리
       </div>
@@ -38,7 +38,7 @@ const getImage = () => {
     <div class="pb-2 pt-4 flex justify-center">
       <div
         :style="getImage()"
-        class="border-2 border-primary bg-cover bg-center w-[120px] h-[120px] rounded-full"
+        class="border-2 border-primary-900-light-68 bg-cover bg-center w-[120px] h-[120px] rounded-full"
       ></div>
     </div>
     <div class="text-secondary-700 font-medium pb-2">{{ modalData.performer }}</div>

@@ -7,7 +7,7 @@ const { booth, boothType } = storeToRefs(useGetBoothDataStore());
 
 <template>
   <div class="dynamic-padding pb-8">
-    <div class="w-full h-auto bg-primary-100 rounded-2xl">
+    <div class="w-full h-auto bg-primary-50 rounded-2xl">
       <div class="flex items-center px-4 pt-4 pb-1">
         <div
           class="w-fit h-fit px-4 py-1 rounded-full bg-secondary-50 text-secondary-500 font-pretendard font-semibold text-xs"

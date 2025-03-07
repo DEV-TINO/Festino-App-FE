@@ -14,5 +14,5 @@
 }
 
 .is-state-show-false {
-  @apply px-2 py-1 w-fit h-fit flex justify-center text-center text-3xs bg-primary-800-light text-primary-800 rounded-full;
+  @apply px-2 py-1 w-fit h-fit flex justify-center text-center text-3xs bg-warn-light text-warn rounded-full;
 }

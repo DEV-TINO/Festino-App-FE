@@ -102,7 +102,7 @@ onUnmounted(() => {
 <template>
   <div
     v-if="!noticeData.content.includes('총학생회')"
-    class="w-full h-auto flex flex-col bg-white rounded-3xl border-primary border-1 justify-center items-center p-5 gap-[20px] select-none"
+    class="w-full h-auto flex flex-col bg-white rounded-3xl border-primary-900-light-68 border-1 justify-center items-center p-5 gap-[20px] select-none"
   >
     <!-- <div v-if="noticeData.title"></div> -->
     <div v-if="noticeData.imageUrl.length > 1" class="relative w-full">
@@ -113,7 +113,7 @@ onUnmounted(() => {
       </div>
       <div
         ref="containerRef"
-        class="snap-x snap-mandatory overflow-x-hidden w-full flex rounded-3xl border border-primary"
+        class="snap-x snap-mandatory overflow-x-hidden w-full flex rounded-3xl border border-primary-900-light-68"
       >
         <div
           v-for="(image, index) in noticeData.imageUrl"

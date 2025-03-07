@@ -19,7 +19,7 @@ const handleClickNotice = async (noticeId) => {
 
 <template>
   <div v-if="notice"
-    class="w-full h-auto flex flex-row bg-white rounded-3xl border-primary border-1 justify-between items-center cursor-pointer select-none mt-5"
+    class="w-full h-auto flex flex-row bg-white rounded-3xl border-primary-900-light-68 border-1 justify-between items-center cursor-pointer select-none mt-5"
     @click="handleClickNotice(notice.noticeId)"
   >
     <div class="flex flex-col pl-4 items-start py-3">
