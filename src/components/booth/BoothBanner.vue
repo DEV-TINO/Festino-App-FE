@@ -12,7 +12,7 @@
         <div
           class="text-white font-jalnan2 text-2xl xs:text-2xl sm:text-3xl"
         >
-          축제 부스 알아보기
+          동아리 부스 알아보기
         </div>
       </div>
     </div>
