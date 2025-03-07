@@ -6,7 +6,7 @@
       <div class="absolute top-[83px] right-3.5 flex flex-col items-end">
         <div class="font-jalnan2 text-xs text-white">한눈에 보는 축제 공연 정보!</div>
         <div
-          class="font-jalnan2 text-3xl bg-gradient-to-t from-white-opacity from-20% to-white text-transparent to-100% bg-clip-text text-right"
+          class="font-jalnan2 text-3xl text-white text-right"
         >
           공연 타임테이블
         </div>

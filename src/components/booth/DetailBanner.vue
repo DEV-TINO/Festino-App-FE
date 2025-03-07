@@ -27,12 +27,12 @@ const getSlogan = () => {
       ></div>
       <div class="absolute w-auto h-auto dynamic-top dynamic-padding">
         <div
-          class="bg-gradient-to-b from-white from-50% to-primary-300 bg-clip-text text-transparent font-jalnan2 text-md xs:text-md sm:text-[19px]"
+          class="text-white font-jalnan2 text-md xs:text-md sm:text-[19px]"
         >
           {{ getSlogan() }}
         </div>
         <div
-          class="font-jalnan2 text-3xl bg-gradient-to-t from-white-opacity from-20% to-white text-transparent to-100% bg-clip-text"
+          class="font-jalnan2 text-3xl text-white"
         >
           {{ booth?.adminName ? booth.adminName : booth.boothName }}
         </div>
@@ -44,6 +44,6 @@ const getSlogan = () => {
 
 <style lang="css" scoped>
 .dynamic-top {
-  top: calc(130 / 230 * 100%) !important;
+  top: calc(130 / 400 * 100%) !important;
 }
 </style>

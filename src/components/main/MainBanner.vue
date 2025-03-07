@@ -5,7 +5,7 @@
     <div class="w-full h-full min-h-[251px] sm:min-h-[290px] bg-tino-thumbs-up bg-cover bg-no-repeat bg-right-top relative">
       <div class="absolute top-6 right-3.5 w-auto h-auto">
         <div class="font-jalnan2 text-xs text-white">2024 한국공학대학교 축제의 모든 것을 한눈에!</div>
-        <div class="font-jalnan2 text-3xl bg-gradient-to-t from-white-opacity from-20% to-white text-transparent to-100% bg-clip-text text-right">
+        <div class="font-jalnan2 text-3xl text-white text-right">
           'Festino'
         </div>
       </div>

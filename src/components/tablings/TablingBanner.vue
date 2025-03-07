@@ -6,7 +6,7 @@
       <div class="absolute w-auto h-auto top-[83px] left-3.5">
         <div class="font-jalnan2 text-xs text-white">예약으로 더 즐거운 축제</div>
         <div
-          class="font-jalnan2 text-3xl bg-gradient-to-t from-white-opacity from-20% to-white text-transparent to-100% bg-clip-text"
+          class="font-jalnan2 text-3xl text-white"
         >
           테이블링 시스템
         </div>
