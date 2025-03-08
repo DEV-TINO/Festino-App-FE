@@ -49,7 +49,7 @@ const getImage = () => {
     </div>
     <div
       @click="handleClickInstagram()"
-      class="text-xs text-secondary-500 rounded-full w-[122px] h-[26px] flex items-center justify-center bg-instagram-bg gap-1"
+      class="text-xs text-secondary-500 rounded-full h-[26px] flex items-center justify-center bg-instagram-bg gap-1 px-2"
     >
       <div class="w-[16px] h-[16px] bg-instagram bg-center bg-no-repeat bg-[length:16px_16px]"></div>
       <div>@{{ modalData.instagram }}</div>
