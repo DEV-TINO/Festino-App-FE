@@ -59,7 +59,7 @@ const getImage = () => {
         <div
           v-for="data in modalData.musicList"
           :key="data"
-          class="shadow-3xl text-xs text-primary-700 w-full min-h-[60px] rounded-3xl flex items-center justify-between border-2 border-primary"
+          class="shadow-3xl text-xs text-secondary-700 w-full min-h-[60px] rounded-3xl flex items-center justify-between border-2"
         >
           <div class="px-8 w-[30px] h-[30px] bg-tino-cd bg-center bg-no-repeat bg-[length:30px_30px]"></div>
           <div class="w-full flex flex-col pr-4">
