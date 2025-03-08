@@ -121,7 +121,7 @@ onMounted(async () => {
 
             <div
               v-if="selectedBoothId == nightBooth.boothId"
-              class="absolute rounded-3xl border-4 border-primary-900 top-0 left-0 dynamic-item"
+              class="absolute rounded-3xl border-4 border-primary-900-light-68 top-0 left-0 dynamic-item"
             ></div>
           </div>
         </div>

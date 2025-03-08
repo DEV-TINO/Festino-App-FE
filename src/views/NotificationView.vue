@@ -45,7 +45,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen h-full items-center bg-notification-bg select-none pb-20">
+  <div class="flex flex-col min-h-screen h-full items-center bg-primary-50 select-none pb-20">
     <Header />
     <div
       class="flex flex-row w-full h-[48px] text-secondary-700 bg-white justify-center items-center font-medium text-xl relative"

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 w-full rounded-3xl border-2 border-primary gap-[14px] flex flex-col items-center justify-center">
+  <div class="p-4 w-full rounded-3xl border-2 border-primary-900-light-68 gap-[14px] flex flex-col items-center justify-center">
     <div class="flex w-full items-center gap-[14px]">
       <div class="w-full">
         <input class="w-full flex focus:outline-none py-[10px] placeholder:text-secondary-100" type="text" placeholder="쿠폰번호를 입력하세요." maxlength="10" />

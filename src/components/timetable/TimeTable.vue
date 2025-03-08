@@ -55,7 +55,7 @@ onMounted(async () => {
 
 <template>
   <div class="w-full select-none pb-20">
-    <div class="flex flex-col items-center border-1 border-primary rounded-3xl py-5 shadow-4xl gap-4">
+    <div class="flex flex-col items-center border-1 border-primary-900-light-68 rounded-3xl py-5 shadow-4xl gap-4">
       <div class="text-gray-400 text-2xs">* 주최측의 사정에 따라 일정이 달라질 수 있습니다.</div>
       <div class="px-5 pb-5">
         <div
@@ -76,7 +76,7 @@ onMounted(async () => {
           <div v-for="data in clubData.showInfo" :key="data" :class="isShowingTime(data.isShowing)">{{ data.showStartTime }} ~ {{ data.showEndTime }}</div>
         </div>
         <div v-if="clubData.showInfo && clubData.showInfo.length != 0" class="pt-3 pl-4 sm:pl-7 pr-3 xs:pr-4 sm:pr-7">
-          <div class="border-2 border-primary-700 h-[auto] w-0 border-dashed flex flex-col items-center gap-44 pb-32 mt-[-10px]">
+          <div class="border-2 border-primary-900-light-68 h-[auto] w-0 border-dashed flex flex-col items-center gap-44 pb-32 mt-[-10px]">
             <div class="w-[16px] h-[16px] mt-[-5px] rounded-full flex items-center justify-center" :class="isShowingBgPin(data.isShowing)" v-for="data in clubData.showInfo" :key="data">
               <div class="w-[8px] h-[8px] rounded-full" :class="isShowingPin(data.isShowing)"></div>
             </div>

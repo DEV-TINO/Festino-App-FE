@@ -397,7 +397,7 @@ watchEffect(() => {
         @touchstart.passive="handleTouchStart($event)"
         @touchmove.passive="handleTouchMove($event)"
         id="map-container"
-        class="relative aspect-square w-full min-h-[340px] h-[340px] xs:h-[390px] sm:h-[453.5px] max-h-[453.5px] bg-map-color border border-primary-900-light rounded-3xl overflow-auto touch-pan-x touch-pan-y"
+        class="relative aspect-square w-full min-h-[340px] h-[340px] xs:h-[390px] sm:h-[453.5px] max-h-[453.5px] bg-map-color border border-primary-900-light-20 rounded-3xl overflow-auto touch-pan-x touch-pan-y"
       >
         <div
           @click="initSelectedMarker()"

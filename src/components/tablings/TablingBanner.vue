@@ -1,37 +1,20 @@
-<script setup>
-import { useRouter } from 'vue-router';
+<script setup></script>
 
-const router = useRouter();
-</script>
 <template>
-  <div class="relative">
-    <div
-      class="w-full min-h-[231px] dynamic-tino-height bg-tino-no-arm-v2 bg-cover bg-right-bottom bg-no-repeat relative"
-    >
-      <div class="absolute w-auto h-auto dynamic-top dynamic-padding">
+  <div class="relative select-none">
+    <div class="w-full h-full min-h-[251px] sm:min-h-[290px] bg-tabling-banner bg-cover bg-no-repeat bg-right-top relative">
+      <div class="absolute w-auto h-auto top-[83px] left-3.5 drop-shadow-title">
         <div class="font-jalnan2 text-xs text-white">예약으로 더 즐거운 축제</div>
         <div
-          class="font-jalnan2 text-3xl bg-gradient-to-t from-white-opacity from-20% to-white text-transparent to-100% bg-clip-text"
+          class="font-jalnan2 text-3xl text-white"
         >
           테이블링 시스템
         </div>
       </div>
     </div>
-    <div
-      class="w-min-[375px] w-max-[500px] w-full dynamic-tino-arm-height absolute z-30 top-[213px] bg-tino-arm4x bg-cover bg-no-repeat bg-right-top"
-    ></div>
+    <div class="w-full rounded-t-3xl bg-white h-[34px] absolute top-[220px] sm:top-[256px]"></div>
   </div>
 </template>
 
 <style lang="css" scoped>
-.dynamic-top {
-  top: calc(82 / 230 * 100%) !important;
-}
-
-.dynamic-tino-height {
-  height: calc(230 / 430 * 100%) !important;
-}
-.dynamic-tino-arm-height {
-  @apply rounded-tl-3xl border-primary bg-white h-[40px];
-}
 </style>

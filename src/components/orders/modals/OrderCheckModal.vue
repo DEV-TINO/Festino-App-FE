@@ -64,7 +64,7 @@ onMounted(() => {
     <div class="font-semibold text-xl text-secondary-700">주문 확인서</div>
     <div class="w-full gap-1">
       <div class="font-semibold text-secondary-700 mb-1">주문자 정보</div>
-      <div class="w-full rounded-xl bg-primary-900-lightest p-4 flex flex-col gap-3 text-secondary-500 text-sm">
+      <div class="w-full rounded-xl bg-primary-900-light-12 p-4 flex flex-col gap-3 text-secondary-500 text-sm">
         <div class="flex justify-between">
           <div>입금자명</div>
           <div>{{ userName }}</div>
@@ -77,7 +77,7 @@ onMounted(() => {
     </div>
     <div class="w-full gap-1">
       <div class="font-semibold text-secondary-700 mb-1">결제 정보 확인</div>
-      <div class="w-full rounded-xl bg-primary-900-lightest p-4">
+      <div class="w-full rounded-xl bg-primary-900-light-6 p-4">
         <div class="font-bold flex pb-[12px] justify-between text-secondary-500">
           <div class="text-sm">{{ accountInfo.bankName }}</div>
           <div class="flex gap-[8px] items-center cursor-pointer" @click="clipAccount()">

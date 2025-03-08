@@ -65,7 +65,7 @@ onMounted(() => {
       </div>
       <div class="w-full gap-1 flex flex-col">
         <div class="font-semibold text-secondary-700">주문하기</div>
-        <div class="w-full rounded-xl bg-primary-900-lightest p-4">
+        <div class="w-full rounded-xl bg-primary-900-light-6 p-4">
           <div
             v-for="orderMenu in orderMenus"
             :key="orderMenu.menuName"
@@ -85,7 +85,7 @@ onMounted(() => {
       <div class="relative w-full flex flex-col gap-1">
         <div class="font-semibold text-secondary-700">메모</div>
         <textarea
-          class="text-sm w-full resize-none border border-primary p-4 h-24 rounded-2xl focus:outline-none focus:border-primary-700"
+          class="text-sm w-full resize-none border border-primary-900-light-68 p-4 h-24 rounded-2xl focus:outline-none focus:border-primary-700"
           placeholder="메모를 입력해주세요."
           @input="handleInputNote($event)"
           :value="currentNote"

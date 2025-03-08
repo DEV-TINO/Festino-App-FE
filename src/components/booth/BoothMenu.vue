@@ -51,8 +51,8 @@ const handleScrollToSelectedCategory = () => {
         @click="convertBoothMenuTab(index)"
         class="w-[88px] h-[44px] mr-2 rounded-full flex justify-center items-center cursor-pointer"
         :class="{
-          'border border-primary-900 bg-primary-900 text-white': selectBoothMenu === index,
-          'border border-primary-900-light text-primary-900-light': selectBoothMenu !== index,
+          'border border-primary-900-light-68 bg-primary-900 text-white': selectBoothMenu === index,
+          'border border-primary-900-light-20 text-primary-900-light-20': selectBoothMenu !== index,
         }"
         tabindex="0"
         :id="index"
