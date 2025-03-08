@@ -8,7 +8,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <div :class="isState ? 'is-state-show-true' : 'is-state-show-false'">
+  <div
+    :class="{'state-show': true, 'is-active': isState}"
+  >
     <slot></slot>
   </div>
 </template>
