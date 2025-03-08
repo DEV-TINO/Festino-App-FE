@@ -6,6 +6,8 @@ import { useRouter } from 'vue-router';
 export const useGetBoothDataStore = defineStore('boothData', () => {
   const router = useRouter();
 
+  const selectedIndex = ref(0);
+
   const allBoothList = ref([]);
   const dayBoothList = ref([]);
   const nightBoothList = ref([]);
@@ -183,5 +185,6 @@ export const useGetBoothDataStore = defineStore('boothData', () => {
     getBoothData,
     setBoothType,
     setMenuType,
+    selectedIndex,
   };
 });

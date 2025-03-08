@@ -18,6 +18,7 @@ import OrderCompleteModal from '@/components/orders/modals/OrderCompleteModal.vu
 import NotExistOrderModal from '@/components/orders/modals/NotExistOrderModal.vue';
 import OrderDetailModal from '@/components/orders/modals/OrderDetailModal.vue';
 import TablingPreventModal from '@/components/tablings/modals/TablingPreventModal.vue';
+import ImageDetailModal from '@/components/booth/modals/ImageDetail.vue';
 
 const baseModalStore = useBaseModal();
 const { isModalOpen, modalType } = storeToRefs(baseModalStore);
@@ -44,6 +45,8 @@ const { isModalOpen, modalType } = storeToRefs(baseModalStore);
     <OrderCompleteModal v-if="modalType === 'orderCompleteModal'" />
     <NotExistOrderModal v-if="modalType === 'notExistOrderModal'" />
     <OrderDetailModal v-if="modalType === 'orderDetailModal'" />
+    <!--Booth-->
+    <ImageDetailModal v-if="modalType === 'image'" />
   </ModalBackground>
 </template>
 
