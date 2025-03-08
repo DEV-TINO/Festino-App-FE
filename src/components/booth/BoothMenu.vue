@@ -49,10 +49,10 @@ const handleScrollToSelectedCategory = () => {
     <div v-for="(item, index) in MENU_ITEMS" :key="item.id">
       <div
         @click="convertBoothMenuTab(index)"
-        class="w-[88px] h-[44px] mr-2 rounded-full flex justify-center items-center cursor-pointer"
+        class="w-[88px] h-[44px] border-primary-900-light-68 mr-2 rounded-full flex justify-center items-center cursor-pointer"
         :class="{
-          'border border-primary-900-light-68 bg-primary-900 text-white': selectBoothMenu === index,
-          'border border-primary-900-light-20 text-primary-900-light-20': selectBoothMenu !== index,
+          'border bg-primary-900 text-white': selectBoothMenu === index,
+          'border text-primary-900-light-68': selectBoothMenu !== index,
         }"
         tabindex="0"
         :id="index"

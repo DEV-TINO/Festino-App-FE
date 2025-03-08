@@ -36,7 +36,7 @@ const getBoothImageProps = (boothImage) => {
       class="pb-2 cursor-pointer"
     >
       <div
-        class="w-full bg-white shadow-3xl flex flex-row justify-between items-center rounded-3.5xl border border-primary-900-light-16 px-4 py-3"
+        class="w-full bg-white shadow-3xl flex flex-row justify-between items-center rounded-3.5xl border border-primary-900-light-68 px-4 py-3"
         v-if="!booth.boothIntro.includes('총학생회')"
       >
         <div class="w-[222px] h-full flex flex-col justify-between pr-1">
