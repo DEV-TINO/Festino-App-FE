@@ -3,10 +3,14 @@ import Home from './footers/HomeIcon.vue';
 import TimeTableIcon from './footers/TimeTableIcon.vue';
 import BoothIcon from './footers/BoothIcon.vue';
 import TablingIcon from './footers/TablingIcon.vue';
+import { useBaseModal } from '@/stores/baseModal';
 import { ref, watch } from 'vue';
 import { useRouter } from 'vue-router';
 
+const TABLING = 3;
 const router = useRouter();
+
+const { openModal } = useBaseModal();
 
 const ICON_URL_MAP = [
   { name: '홈', component: Home, width: '28px', router: 'main' },
@@ -32,6 +36,10 @@ watch(
 );
 
 const handleClickFooter = (index) => {
+  if (index === TABLING) {
+    openModal('tablingPreventModal');
+    return;
+  }
   selectedFooterIndex.value = index;
   router.push({ name: ICON_URL_MAP[index].router });
 };
