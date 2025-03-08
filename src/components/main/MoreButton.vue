@@ -14,7 +14,7 @@ const handleClickMoreButton = (name) => {
 </script>
 
 <template>
-  <div class="flex justify-between items-center px-5 pt-4 pb-3 select-none">
+  <div class="flex justify-between items-center px-5 pb-3 select-none">
     <div class="text-xl font-semibold">{{ componentName }}</div>
     <div class="flex items-center gap-0.5 cursor-pointer" @click="handleClickMoreButton(componentName)">
       <div class="text-secondary-300 text-xs">더보기</div>
