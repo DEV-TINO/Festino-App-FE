@@ -132,7 +132,7 @@ const currentRouteName = ref(currentRoute.value.name);
 // 동아리 홍보전
 const markers = ref({
   more: [
-    { left: 425, bottom: 240, count: 21, tab: 2 },
+    { left: 425, bottom: 240, count: 26, tab: 2 },
   ],
   detail: {
     smoke: [
@@ -257,10 +257,17 @@ const zoomOut = () => {
 const moveScroll = () => {
   const container = containerRef.value;
   if (selectBoothMenu.value === 0) {
-    zoomLevel.value = 1;
+    // 동아리 홍보전
+    zoomLevel.value = 1.3;
+    // 축제
+    // zoomLevel.value = 1;
     nextTick(() => {
-      container.scrollLeft = 99.5;
-      container.scrollTop = 65;
+      // 동아리 홍보전
+      container.scrollLeft = 500;
+      container.scrollTop = 250;
+      // 축제
+      // container.scrollLeft = 99.5;
+      // container.scrollTop = 65;
     });
   } else if (selectBoothMenu.value === 1) {
     // 운동장 눌렀을 때
