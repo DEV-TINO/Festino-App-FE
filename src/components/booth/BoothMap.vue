@@ -133,7 +133,7 @@ isBoothDetail.value = currentRouteName == 'booth-detail';
 // 동아리 홍보전
 const markers = ref({
   more: [
-    { left: 425, bottom: 240, count: 26, tab: 2 },
+    { left: 425, bottom: 240, count: 26, tab: 1 },
   ],
   detail: {
     smoke: [
