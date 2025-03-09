@@ -32,8 +32,8 @@ const handleClickItem = (index) => {
       <img
         :src="`${menu.menuImage}`"
         draggable="false"
-        class="min-w-[94px] max-w-[94px] min-h-[94px] rounded-3xl border border-primary-900-light-20 bg-booth-default-image bg-cover"
-        :class="menu.isSoldOut ? 'brightness-[0.95]' : ''"
+        class="min-w-[94px] max-w-[94px] min-h-[94px] max-h-[94px] rounded-3xl border bg-booth-default-image border-primary-900-light-20 cursor-pointer"
+        :class="(menu.isSoldOut ? 'brightness-[0.95]' : '') || (menu.menuImage ? 'bg-container bg-center' : 'bg-cover')"
       />
       <div class="w-[359px] h-full py-1">
         <div class="pl-[12px] h-full flex flex-col justify-between">

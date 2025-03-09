@@ -42,7 +42,7 @@ export const useGetBoothDataStore = defineStore('boothData', () => {
     try {
       const urls = [
         '/main/booth/all',
-        '/main/booth/night/all',
+        // '/main/booth/night/all',
         '/main/booth/day/all',
         '/main/booth/food/all',
         '/main/facility/all',
@@ -54,16 +54,21 @@ export const useGetBoothDataStore = defineStore('boothData', () => {
         results.push(res);
       }
 
+      // allBoothList.value = results[0].data.boothList;
+      // nightBoothList.value = results[1].data.boothList;
+      // dayBoothList.value = results[2].data.boothList;
+      // foodBoothList.value = results[3].data.boothList;
+      // facilityList.value = results[4].data.facilityList;
+
       allBoothList.value = results[0].data.boothList;
-      nightBoothList.value = results[1].data.boothList;
-      dayBoothList.value = results[2].data.boothList;
-      foodBoothList.value = results[3].data.boothList;
-      facilityList.value = results[4].data.facilityList;
+      dayBoothList.value = results[1].data.boothList;
+      foodBoothList.value = results[2].data.boothList;
+      facilityList.value = results[3].data.facilityList;
 
       boothList.value = [];
       boothList.value.push(
         allBoothList.value,
-        nightBoothList.value,
+        // nightBoothList.value,
         dayBoothList.value,
         foodBoothList.value,
         facilityList.value,
@@ -76,12 +81,12 @@ export const useGetBoothDataStore = defineStore('boothData', () => {
   const convertBoothMenuTab = (index) => {
     selectedTicketBooth.value = false;
 
-    if (index === 5) {
-      selectBoothMenu.value = 4;
-      selectedTicketBooth.value = true;
-    } else {
+    // if (index === 5) {
+    //   selectBoothMenu.value = 4;
+    //   selectedTicketBooth.value = true;
+    // } else {
       selectBoothMenu.value = index;
-    }
+    // }
   };
 
   const setBoothTypeUseUrl = (type) => {

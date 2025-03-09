@@ -16,7 +16,7 @@ const { boothMarkerData } = storeToRefs(useGetBoothDataStore());
 			</div>
 			<div v-if="boothMarkerData?.boothName.includes('총학생회')" class="w-full flex justify-center items-center">
 				<div class="text-[8px] text-secondary-500 rounded-full w-fit h-fit px-4 py-[1px] flex items-center justify-center bg-instagram-bg gap-1">
-					@tukorea_25_wind
+					@22th_yoonseul
 				</div>
       </div>
 			<div v-if="!boothMarkerData?.boothName.includes('총학생회')" class="flex items-center">
