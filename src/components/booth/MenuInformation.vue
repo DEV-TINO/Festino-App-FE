@@ -30,12 +30,17 @@ const handleClickItem = (index) => {
       :class="menu.isSoldOut ? 'bg-[#E5E7EB] border border-gray-300' : 'bg-white border border-primary-900-light-68'"
     >
       <img
+        v-if="menu.menuImage"
         :src="`${menu.menuImage}`"
         draggable="false"
-        class="min-w-[94px] max-w-[94px] min-h-[94px] max-h-[94px] rounded-3xl border  border-primary-900-light-20 cursor-pointer"
-        :class="(menu.isSoldOut ? 'brightness-[0.95]' : '') || (menu.menuImage ? 'bg-container bg-center' : 'bg-cover bg-booth-default-image')"
+        class="min-w-[94px] min-h-[94px] max-w-[94px] max-h-[94px] rounded-3xl border  border-primary-900-light-20 cursor-pointer aspect-1"
+        :class="(menu.isSoldOut ? 'brightness-[0.95]' : '')"
       />
-      <div class="w-[359px] h-full py-1">
+      <div
+        v-else
+        class="min-w-[94px] min-h-[94px] max-w-[94px] max-h-[94px] aspect-1 rounded-3xl border  border-primary-900-light-20 cursor-pointer bg-booth-default-image bg-cover"
+      ></div>
+      <div class="w-[359px] min-h-full py-1">
         <div class="pl-[12px] h-full flex flex-col justify-between">
           <div class="pb-2">
             <div class="flex justify-between pb-1">
