@@ -39,10 +39,10 @@ onMounted(async () => {
         <div class="text-xs font-normal pt-2">{{ show.showStartTime }}</div>
         <div class="text-primary-700 font-medium">{{ show.performer }}</div>
       </div>
-      <div class="flex flex-col items-center cursor-pointer" @click="handleClickInstagram()">
+      <!-- <div class="flex flex-col items-center cursor-pointer" @click="handleClickInstagram()">
         <div class="border-2 border-primary-900-light-68 bg-cover bg-center bg-talent-icon w-[86px] h-[86px] sm:w-[100px] sm:h-[100px] rounded-full"></div>
         <div class="text-primary-700 font-medium pt-6">연예인 공연</div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

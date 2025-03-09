@@ -30,7 +30,7 @@ const getImage = () => {
     <div class="rounded-full bg-primary-700 w-9 h-9 border-2 border-primary-900-light-68 bg-cover bg-center"
     :style="getImage()"></div>
     <div class="text-center leading-none">
-      <div>교내 동아리 공연</div>
+      <div v-if="data.performer !== '연예인 공연'">교내 동아리 공연</div>
       <div>' {{ data.performer }} '</div>
     </div>
     <button @click="handleClickOpenClubModal()" class="text-white bg-primary-700 w-[120px] h-[30px] rounded-full text-xs">공연 정보 상세보기</button>
