@@ -61,7 +61,7 @@ onMounted(async () => {
         <div
           class="w-[300px] xs:w-[350px] sm:w-[390px] py-2 text-white bg-primary-700 rounded-full flex justify-center"
         >
-          공연 타임테이블
+          3월 12일 공연 타임테이블
         </div>
       </div>
       <div v-if="!clubData.showInfo || clubData.showInfo.length == 0" class="w-full flex flex-col items-center pb-4">
