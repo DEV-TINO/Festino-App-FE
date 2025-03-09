@@ -14,7 +14,7 @@ const getImage = (data) => {
 };
 
 const handleClickInstagram = () => {
-  window.open(`https://www.instagram.com/tukorea_25_wind/`, '_blank');
+  window.open(`https://www.instagram.com/22th_yoonseul/`, '_blank');
 };
 
 watch(() => day.value, async () => {
