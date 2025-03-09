@@ -93,7 +93,7 @@ onMounted(() => {
       <div class="min-w-full min-h-[178px] bg-slide-banner-3 bg-cover bg-no-repeat bg-center relative" @click="handleClickMoveTimeTable()">
         <div class="absolute top-5 left-4 flex flex-col items-start">
           <div class="px-[18px] py-0.5 font-pretendard text-xs text-white border-2 border-white font-bold rounded-full">봄맞이 동아리 홍보전 공연</div>
-          <div class="pt-1 px-0.5 font-pretendard text-base text-white drop-shadow-title">한눈에 보는 축제 공연 정보!</div>
+          <div class="pt-1 px-0.5 font-pretendard text-base text-white drop-shadow-title">한눈에 보는 동아리 공연 정보!</div>
           <div class="px-0.5 leading-none font-bold font-pretendard text-base text-white drop-shadow-title">'동아리 공연 타임테이블'</div>
         </div>
         <div class="absolute bottom-4 left-4">

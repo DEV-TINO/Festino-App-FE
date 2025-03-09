@@ -7,7 +7,7 @@
         <div
           class="text-white font-jalnan2 text-xs"
         >
-          티노와 함께
+          티노와 함께하는
         </div>
         <div
           class="text-white font-jalnan2 text-3xl"

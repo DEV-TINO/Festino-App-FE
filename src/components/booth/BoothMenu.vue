@@ -6,12 +6,19 @@ import { storeToRefs } from 'pinia';
 const { convertBoothMenuTab } = useGetBoothDataStore();
 const { selectBoothMenu } = storeToRefs(useGetBoothDataStore());
 
+// const MENU_ITEMS = [
+//   { id: 0, name: "전체" },
+//   { id: 1, name: "야간부스" },
+//   { id: 2, name: "주간부스" },
+//   { id: 3, name: "푸드트럭" },
+//   { id: 4, name: "편의시설" },
+// ];
+
 const MENU_ITEMS = [
   { id: 0, name: "전체" },
-  { id: 1, name: "야간부스" },
-  { id: 2, name: "주간부스" },
-  { id: 3, name: "푸드트럭" },
-  { id: 4, name: "편의시설" },
+  { id: 1, name: "주간부스" },
+  { id: 2, name: "푸드트럭" },
+  { id: 3, name: "편의시설" },
 ];
 
 watch(selectBoothMenu, () => {
@@ -48,7 +55,7 @@ const handleScrollToSelectedCategory = () => {
   >
     <div v-for="(item, index) in MENU_ITEMS" :key="item.id">
       <div
-        @click="convertBoothMenuTab(index)"
+        @click="convertBoothMenuTab(item.id)"
         class="w-[88px] h-[44px] border-primary-900-light-68 mr-2 rounded-full flex justify-center items-center cursor-pointer"
         :class="{
           'border bg-primary-900 text-white': selectBoothMenu === index,
