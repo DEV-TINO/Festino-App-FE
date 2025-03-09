@@ -108,7 +108,7 @@ export default {
         'back-arrow-white': "url('/icons/arrow-back-white.png')",
         'board-icon': "url('/icons/orders/board.svg')",
         'tino-cd': "url('/icons/tino-cd.svg')",
-        'booth-default-image': "url('/images/booth/booth-default-image.png')",
+        'booth-default-image': "url('/images/booth/booth-default-image.svg')",
         'booth-map': "url('/images/booth/map.svg')",
         'link-icon': "url('/icons/link.svg')",
         'tino-error': "url('/icons/error-tino.svg')",

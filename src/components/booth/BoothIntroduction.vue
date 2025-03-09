@@ -62,7 +62,7 @@ const getBoothImageProps = (boothImage) => {
           </div>
         </div>
         <div class="w-32 min-w-[128px] h-32 flex justify-center items-center">
-          <div class="w-full h-full bg-cover rounded-3.5xl border" v-bind="getBoothImageProps(booth.boothImage)"></div>
+          <div class="w-full h-full bg-cover rounded-3.5xl border bg-center border-primary-900-light-20" v-bind="getBoothImageProps(booth.boothImage)"></div>
         </div>
       </div>
     </div>
