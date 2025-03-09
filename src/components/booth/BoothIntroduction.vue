@@ -54,7 +54,7 @@ const getBoothImageProps = (boothImage) => {
           <div class="flex flex-row">
             <ShowState class="mr-1" :isState="booth.isOpen">{{ booth.isOpen ? '운영중' : '준비중' }}</ShowState>
             <div
-              class="px-2 py-1 w-fit flex justify-center text-center items-center text-3xs text-secondary-500 bg-primary-50 rounded-full"
+              class="px-2 py-1 w-fit flex justify-center text-center items-center text-3xs text-secondary-500 bg-gray-100 rounded-full"
             >
               <img class="mr-1 w-2 h-2 flex justify-center" src="/images/booth/booth-clock-icon.png" />
               <div>{{ booth.openTime }} ~ {{ booth.closeTime }}</div>

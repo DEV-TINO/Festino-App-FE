@@ -170,8 +170,8 @@ const markers = ref({
       { markerNum: 33, left: 520, bottom: 350, scrollLeft: 1200, scrollTop: 160 },
       { markerNum: 32, left: 440, bottom: 350, scrollLeft: 970, scrollTop: 160 },
       // B동 앞
-      { markerNum: 35, left: 387, bottom: 310, scrollLeft: 840, scrollTop: 250 },
-      { markerNum: 34, left: 405, bottom: 310, scrollLeft: 890, scrollTop: 250 },
+      { markerNum: 34, left: 387, bottom: 310, scrollLeft: 840, scrollTop: 250 },
+      { markerNum: 35, left: 405, bottom: 310, scrollLeft: 890, scrollTop: 250 },
       // B동 앞 맞은 편
       { markerNum: 30, left: 387, bottom: 340, scrollLeft: 840, scrollTop: 200 },
       { markerNum: 31, left: 405, bottom: 340, scrollLeft: 890, scrollTop: 200 },
