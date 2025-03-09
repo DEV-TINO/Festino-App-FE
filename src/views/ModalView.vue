@@ -17,6 +17,8 @@ import OrderCheckModal from '@/components/orders/modals/OrderCheckModal.vue';
 import OrderCompleteModal from '@/components/orders/modals/OrderCompleteModal.vue';
 import NotExistOrderModal from '@/components/orders/modals/NotExistOrderModal.vue';
 import OrderDetailModal from '@/components/orders/modals/OrderDetailModal.vue';
+import TablingPreventModal from '@/components/tablings/modals/TablingPreventModal.vue';
+import ImageDetailModal from '@/components/booth/modals/ImageDetail.vue';
 
 const baseModalStore = useBaseModal();
 const { isModalOpen, modalType } = storeToRefs(baseModalStore);
@@ -32,6 +34,7 @@ const { isModalOpen, modalType } = storeToRefs(baseModalStore);
     <MessageFailModal v-if="modalType === 'messageFailModal'" />
     <CompleteReserveModal v-if="modalType === 'completeReserveModal'" />
     <FailReservationModal v-if="modalType === 'failReservationModal'" />
+    <TablingPreventModal v-if="modalType === 'tablingPreventModal'" />
     <!-- Loading -->
     <LoadingModal v-if="modalType === 'loadingModal'" />
     <!--Timetable -->
@@ -42,6 +45,8 @@ const { isModalOpen, modalType } = storeToRefs(baseModalStore);
     <OrderCompleteModal v-if="modalType === 'orderCompleteModal'" />
     <NotExistOrderModal v-if="modalType === 'notExistOrderModal'" />
     <OrderDetailModal v-if="modalType === 'orderDetailModal'" />
+    <!--Booth-->
+    <ImageDetailModal v-if="modalType === 'image'" />
   </ModalBackground>
 </template>
 

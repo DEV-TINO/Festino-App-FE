@@ -26,7 +26,7 @@ const handleClickNotice = async (noticeId) => {
       <div class="w-[20px] h-[20px] bg-center bg-pin-icon bg-no-repeat bg-[length:20px_20px]"></div>
       <div class="py-1 text-base font-normal text-primary-700 leading-tight">{{ notice.title }}</div>
     </div>
-    <div class="flex justify-end pr-4 text-xs font-normal text-secondary-500 w-[140px]">
+    <div class="flex justify-end px-4 text-xs font-normal text-secondary-500">
       {{ timeAgo(notice.updateAt) }}
     </div>
   </div>

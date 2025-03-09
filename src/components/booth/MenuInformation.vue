@@ -2,27 +2,37 @@
 import MenuOption from '@/components/booth/MenuOption.vue';
 import MenuStatus from '@/components/booth/ShowState.vue';
 
+import { useBaseModal } from '@/stores/baseModal';
 import { useGetBoothDataStore } from '@/stores/booths/boothDataStore';
 import { storeToRefs } from 'pinia';
 
-const { booth, menuList } = storeToRefs(useGetBoothDataStore());
+const { booth, menuList, selectedIndex } = storeToRefs(useGetBoothDataStore());
+const { openModal } = useBaseModal();
 const defaultOption = 0;
 
 const priceToString = (price) => {
   return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+};
+
+const handleClickItem = (index) => {
+  if(menuList.value[index].menuImage){
+    selectedIndex.value = index;
+    openModal('image');
+  }
 };
 </script>
 
 <template>
   <div v-for="(menu, index) in menuList" :key="index" class="dynamic-padding">
     <div
-      class="w-full h-[120px] p-[13px] rounded-3xl shadow-4xl flex mb-[10px]"
-      :class="menu.isSoldOut ? 'bg-[#E5E7EB] border border-gray-300' : 'bg-white border border-primary-900-light-20'"
+      @click="handleClickItem(index)"
+      class="w-full p-[13px] rounded-3xl shadow-4xl flex mb-[10px]"
+      :class="menu.isSoldOut ? 'bg-[#E5E7EB] border border-gray-300' : 'bg-white border border-primary-900-light-68'"
     >
       <img
         :src="`${menu.menuImage}`"
         draggable="false"
-        class="min-w-[94px] max-w-[94px] h-full rounded-3xl border bg-booth-default-image bg-cover"
+        class="min-w-[94px] max-w-[94px] min-h-[94px] rounded-3xl border border-primary-900-light-20 bg-booth-default-image bg-cover"
         :class="menu.isSoldOut ? 'brightness-[0.95]' : ''"
       />
       <div class="w-[359px] h-full py-1">

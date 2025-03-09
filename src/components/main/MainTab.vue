@@ -25,9 +25,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <DateButtons />
+  <!-- <DateButtons /> -->
   <MoreButton :componentName="timeTable" />
-  <div class="px-5">
+  <div class="px-5 pb-4">
     <ShowPreview class="shadow-4xl" />
   </div>
   <MoreButton :componentName="notification" />

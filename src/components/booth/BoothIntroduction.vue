@@ -36,7 +36,7 @@ const getBoothImageProps = (boothImage) => {
       class="pb-2 cursor-pointer"
     >
       <div
-        class="w-full bg-white shadow-3xl flex flex-row justify-between items-center rounded-3.5xl border border-primary-900-light-16 px-4 py-3"
+        class="w-full bg-white shadow-3xl flex flex-row justify-between items-center rounded-3.5xl border border-primary-900-light-68 px-4 py-3"
         v-if="!booth.boothIntro.includes('총학생회')"
       >
         <div class="w-[222px] h-full flex flex-col justify-between pr-1">
@@ -62,7 +62,7 @@ const getBoothImageProps = (boothImage) => {
           </div>
         </div>
         <div class="w-32 min-w-[128px] h-32 flex justify-center items-center">
-          <div class="w-full h-full bg-cover rounded-3.5xl border" v-bind="getBoothImageProps(booth.boothImage)"></div>
+          <div class="w-full h-full bg-cover rounded-3.5xl border bg-center border-primary-900-light-20" v-bind="getBoothImageProps(booth.boothImage)"></div>
         </div>
       </div>
     </div>

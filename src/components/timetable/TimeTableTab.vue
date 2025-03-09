@@ -4,8 +4,8 @@ import TimeTable from "./TimeTable.vue";
 </script>
 
 <template>
-  <DateButtons />
-  <div class="px-5 pt-5 pb-1.5 rounded-3xl">
+  <!-- <DateButtons /> -->
+  <div class="px-5 pt-1 pb-1.5 rounded-3xl">
     <TimeTable />
   </div>
 </template>

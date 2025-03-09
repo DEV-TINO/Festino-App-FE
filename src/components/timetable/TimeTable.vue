@@ -39,7 +39,7 @@ const updateActiveTimetable = () => {
 };
 
 const handleClickInstagram = () => {
-  window.open(`https://www.instagram.com/tukorea_25_wind/`, '_blank');
+  window.open(`https://www.instagram.com/22th_yoonseul/`, '_blank');
 };
 
 watch(() => day.value, async () => {
@@ -61,7 +61,7 @@ onMounted(async () => {
         <div
           class="w-[300px] xs:w-[350px] sm:w-[390px] py-2 text-white bg-primary-700 rounded-full flex justify-center"
         >
-          DAY {{ day }} 공연 타임테이블
+          공연 타임테이블
         </div>
       </div>
       <div v-if="!clubData.showInfo || clubData.showInfo.length == 0" class="w-full flex flex-col items-center pb-4">
@@ -90,7 +90,7 @@ onMounted(async () => {
       </div>
       <div class="text-center flex flex-col gap-2">
         <p class="text-primary-700 text-xs">자세한 공연 정보가 궁금하다면?</p>
-        <button @click="handleClickInstagram()" class="text-white w-[232px] h-[30px] rounded-full bg-primary-700 text-sm">총학생회 wind 인스타그램 바로가기</button>
+        <button @click="handleClickInstagram()" class="text-white px-4 h-[30px] rounded-full bg-primary-700 text-sm">동아리 연합회 윤슬 인스타그램 바로가기</button>
       </div>
     </div>
   </div>

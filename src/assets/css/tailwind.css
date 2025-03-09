@@ -9,10 +9,10 @@
   }
 }
 
-.is-state-show-true {
-  @apply px-2 py-1 w-fit h-fit flex justify-center text-center text-3xs bg-open-light text-open rounded-full;
+.state-show {
+  @apply px-2 py-1 w-fit h-fit flex justify-center text-center text-3xs bg-close-light text-close rounded-full;
 }
 
-.is-state-show-false {
-  @apply px-2 py-1 w-fit h-fit flex justify-center text-center text-3xs bg-close-light text-close rounded-full;
+.state-show.is-active{
+  @apply bg-open-light text-open
 }
