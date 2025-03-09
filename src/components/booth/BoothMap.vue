@@ -14,6 +14,7 @@ const {
   nightBoothList,
   dayBoothList,
   foodBoothList,
+  facilityList,
   booth,
 } = storeToRefs(useGetBoothDataStore());
 
@@ -28,7 +29,7 @@ const isBoothDetail = ref(false);
 const currentRoute = ref(router.currentRoute.value);
 const currentRouteName = ref(currentRoute.value.name);
 
-// isBoothDetail.value = currentRouteName == 'booth-detail';
+isBoothDetail.value = currentRouteName == 'booth-detail';
 
 // 축제
 // const markers = ref({
@@ -270,7 +271,7 @@ const moveScroll = () => {
       // container.scrollTop = 65;
     });
   } else if (selectBoothMenu.value === 1) {
-    // 운동장 눌렀을 때
+    // 야간부스 눌렀을 때
     zoomLevel.value = 1.6;
     nextTick(() => {
       focusMarker();
@@ -297,10 +298,46 @@ const moveScroll = () => {
       });
     } else {
       // 티켓 부스 쪽 대왕 마커 눌렀을 때
+      // nextTick(() => {
+      //   container.scrollLeft = 620;
+      //   container.scrollTop = 200;
+      //   focusMarker();
+      // });
+    }
+  }
+
+  if (selectBoothMenu.value === 0) {
+    // 동아리 홍보전
+    zoomLevel.value = 1.3;
+    // 축제
+    // zoomLevel.value = 1;
+    nextTick(() => {
+      // 동아리 홍보전
+      container.scrollLeft = 500;
+      container.scrollTop = 250;
+      // 축제
+      // container.scrollLeft = 99.5;
+      // container.scrollTop = 65;
+    });
+  } else if (selectBoothMenu.value === 1) {
+    // 야간부스 눌렀을 때
+    zoomLevel.value = 1.6;
+    nextTick(() => {
+      focusMarker();
+    });
+  } else if (selectBoothMenu.value === 2) {
+    // 벙커 눌렀을 때
+    zoomLevel.value = 1.6;
+    nextTick(() => {
+      focusMarker();
+    });
+  } else if (selectBoothMenu.value === 3) {
+    zoomLevel.value = 1.6;
+    if (selectedTicketBooth.value === false) {
+      // 편의시설 눌렀을 때
       nextTick(() => {
-        container.scrollLeft = 620;
-        container.scrollTop = 200;
-        focusMarker();
+        container.scrollLeft = 130;
+        container.scrollTop = 150;
       });
     }
   }
@@ -420,7 +457,7 @@ const initSelectedMarker = () => {
 
 const clickMarkerSpeechBubble = (type, id, marker) => {
   if (marker >= 90) {
-    return window.open(`https://www.instagram.com/tukorea_25_wind/`, '_blank');
+    return window.open(`https://www.instagram.com/22th_yoonseul/`, '_blank');
   }
   getBoothData(type, id);
 };
@@ -452,25 +489,40 @@ watchEffect(() => {
     moveScroll();
     selectedMarker.value = '';
 
+    // if (selectBoothMenu.value === 1) {
+    //   const foundMarker = findMarker(nightBoothList.value);
+    //   if (foundMarker) {
+    //     selectedMarker.value = foundMarker;
+    //     getBoothDetailData(foundMarker);
+    //   }
+    // } else if (selectBoothMenu.value === 2) {
+    //   const foundMarker = findMarker(dayBoothList.value);
+    //   if (foundMarker) {
+    //     selectedMarker.value = foundMarker;
+    //     getBoothDetailData(foundMarker);
+    //   }
+    // } else if (selectBoothMenu.value === 3) {
+    //   const foundMarker = findMarker(foodBoothList.value);
+    //   if (foundMarker) {
+    //     selectedMarker.value = foundMarker;
+    //     getBoothDetailData(foundMarker);
+    //   }
+    // }
+
     if (selectBoothMenu.value === 1) {
-      const foundMarker = findMarker(nightBoothList.value);
-      if (foundMarker) {
-        selectedMarker.value = foundMarker;
-        getBoothDetailData(foundMarker);
-      }
-    } else if (selectBoothMenu.value === 2) {
       const foundMarker = findMarker(dayBoothList.value);
       if (foundMarker) {
         selectedMarker.value = foundMarker;
         getBoothDetailData(foundMarker);
       }
-    } else if (selectBoothMenu.value === 3) {
+    } else if (selectBoothMenu.value === 2) {
       const foundMarker = findMarker(foodBoothList.value);
       if (foundMarker) {
         selectedMarker.value = foundMarker;
         getBoothDetailData(foundMarker);
       }
     }
+
     if (route.params?.id) {
       loadDetailMap(); // `route.params.id` 존재 시 호출
     }
