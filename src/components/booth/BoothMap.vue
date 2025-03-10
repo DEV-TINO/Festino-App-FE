@@ -138,7 +138,6 @@ const markers = ref({
   detail: {
     smoke: [
       { markerNum: 77, left: 150, bottom: 430, scrollLeft: 235, scrollTop: 0 }, // 팁 뒤
-      { markerNum: 78, left: 30, bottom: 175, scrollLeft: 0, scrollTop: 580 }, // 운동장 구석
     ],
     store: [
       { markerNum: 75, left: 150, bottom: 370, scrollLeft: 235, scrollTop: 90 }, // 종관
@@ -146,6 +145,7 @@ const markers = ref({
     ],
     toilet: [
       { markerNum: 71, left: 150, bottom: 350, scrollLeft: 235, scrollTop: 90 },
+      { markerNum: 72, left: 70, bottom: 350, scrollLeft: 20, scrollTop: 130 },
       { markerNum: 73, left: 520, bottom: 367, scrollLeft: 1200, scrollTop: 110 },
       { markerNum: 74, left: 440, bottom: 367, scrollLeft: 970, scrollTop: 110 },
     ],
