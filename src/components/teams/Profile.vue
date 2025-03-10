@@ -3,7 +3,7 @@ import { defineProps } from 'vue';
 
 const props = defineProps({
   member: {
-    type: Array,
+    type: Object,
     required: true,
   },
 });
