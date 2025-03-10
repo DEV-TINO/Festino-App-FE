@@ -1,5 +1,6 @@
 <script setup>
 import Header from '@/components/header/Header.vue';
+import Profile from '@/components/teams/Profile.vue';
 import { api } from '@/utils/api';
 import Swal from 'sweetalert2';
 import { ref } from 'vue';
@@ -7,9 +8,99 @@ import { ref } from 'vue';
 const content = ref('');
 const email = ref('');
 
+const openDevTino = () => {
+  window.open('https://github.com/DEV-TINO', '_blank');
+};
+
+const members = [
+  {
+    name: '김성준',
+    major: '컴퓨터공학부',
+    position: '총괄리더',
+    image: './images/teams/seongjoon.svg',
+    blog: 'https://kim-song-jun.github.io/',
+  },
+  {
+    name: '이승민',
+    major: '컴퓨터공학부',
+    position: '부리더 | BE팀장',
+    image: './images/teams/seungmin.svg',
+    blog: 'https://seeungmin.github.io/',
+  },
+  {
+    name: '이희연',
+    major: '컴퓨터공학부',
+    position: 'FE팀장',
+    image: './images/teams/heeyeon.svg',
+    blog: 'https://heedonguri.tistory.com/',
+  },
+  {
+    name: '정지훈',
+    major: '디자인공학부',
+    position: 'UX/UI 팀장',
+    image: './images/teams/jihoon.svg',
+    blog: '',
+  },
+  {
+    name: '임정윤',
+    major: '컴퓨터공학부',
+    position: 'FE팀원',
+    image: './images/teams/jungyun.svg',
+    blog: 'https://hmyang.tistory.com/',
+  },
+  {
+    name: '김민지',
+    major: '컴퓨터공학부',
+    position: 'FE팀원',
+    image: './images/teams/minji.svg',
+    blog: 'https://alswlfjddl.tistory.com/',
+  },
+  {
+    name: '김경민',
+    major: '컴퓨터공학부',
+    position: 'BE팀원',
+    image: './images/teams/kyungmin.svg',
+    blog: 'https://velog.io/@rvbear/posts',
+  },
+  {
+    name: '김예린',
+    major: '컴퓨터공학부',
+    position: 'BE팀원',
+    image: './images/teams/yerin.svg',
+    blog: 'https://velog.io/@niireymik/posts',
+  },
+  {
+    name: '김태건',
+    major: '컴퓨터공학부',
+    position: 'BE팀원',
+    image: './images/teams/taegun.svg',
+    blog: 'https://idyidy.tistory.com/',
+  },
+  {
+    name: '유수현',
+    major: '컴퓨터공학부',
+    position: 'BE팀원',
+    image: './images/teams/suhyeon.svg',
+    blog: 'https://blog.naver.com/dbtngus20',
+  },
+  {
+    name: '김규리',
+    major: '컴퓨터공학부',
+    position: 'UX/UI팀원',
+    image: './images/teams/gyuri.svg',
+    blog: '',
+  },
+  {
+    name: '임혜지',
+    major: '컴퓨터공학부',
+    position: 'UX/UI팀원',
+    image: './images/teams/hyeji.svg',
+    blog: '',
+  },
+];
+
 const handleClickReviewSubmit = async () => {
-  // Check is Email is valiate
-  if (email.value !== '' && email.value.length > 0 && !email.value.includes('@')) {
+  if (email.value && !email.value.includes('@')) {
     alert('Please enter a valid email address');
     return;
   }
@@ -20,11 +111,11 @@ const handleClickReviewSubmit = async () => {
       email: email.value,
     });
     if (!response.data.success) {
-      alert('Something ent wrong, Please try again');
+      alert('Something went wrong, Please try again');
       return;
     }
   } catch (error) {
-    alert('Something ent wrong, Please try again');
+    alert('Something went wrong, Please try again');
     console.error(error);
     return;
   }
@@ -41,8 +132,47 @@ const handleClickReviewSubmit = async () => {
 <template>
   <div class="flex flex-col pb-24">
     <Header />
-    <img src="/images/teams/teams.png" />
+    <div class="flex flex-col w-full items-center justify-center px-5 gap-4 pt-14 pb-14">
+      <div class="text-primary-900 text-xs font-bold text-center">FESTINO</div>
+      <div class="text-primary-900 text-2xl font-bold text-center">페스티노 개발진 소개</div>
+      <div class="text-[#4B4B4B] text-base text-center">
+        한국공학대학교 컴퓨터공학부 9명과<br />디자인공학부 3명으로 제작된 프로젝트
+      </div>
+      <div class="grid grid-cols-2 w-full sm:px-4 justify-center pt-8 gap-x-2.5 gap-y-4 justify-items-center">
+        <Profile v-for="(member, index) in members" :key="index" :member="member" />
+      </div>
+    </div>
 
+    <div class="flex flex-col w-full bg-primary-900-light-12 py-[60px] px-[20px] justify-center items-center">
+      <div class="text-primary-900 text-2xl font-bold text-center">한국공학대학교<br />개발 소모임 Dev-Tino</div>
+      <div class="text-[#4B4B4B] text-xs font-medium text-center pt-4 pb-[25px]">
+        컴퓨터공학부 개발 소모임 팀 Dev-TINO는<br />
+        지식과 경험을 공유하며 함께 성장하는 개발 소모임입니다.<br />
+        학생들이 모여 다양한 프로젝트와 활동을 통해 서로의 성장과 발전을 도모합니다.
+      </div>
+      <button
+        @click="openDevTino"
+        class="bg-white text-xs w-28 font-bold flex items-center justify-center text-primary-900 m-0 px-[4.45px] py-2 rounded-[6px] border-[1px] border-[#999999]/30 gap-[5px]"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 256 256">
+          <path
+            fill="currentColor"
+            d="M117.18 188.74a12 12 0 0 1 0 17l-5.12 5.12A58.26 58.26 0 0 1 70.6 228a58.62 58.62 0 0 1-41.46-100.08l34.75-34.75a58.64 58.64 0 0 1 98.56 28.11a12 12 0 1 1-23.37 5.44a34.65 34.65 0 0 0-58.22-16.58l-34.75 34.75A34.62 34.62 0 0 0 70.57 204a34.4 34.4 0 0 0 24.49-10.14l5.11-5.12a12 12 0 0 1 17.01 0M226.83 45.17a58.65 58.65 0 0 0-82.93 0l-5.11 5.11a12 12 0 0 0 17 17l5.12-5.12a34.63 34.63 0 1 1 49 49l-34.81 34.7A34.4 34.4 0 0 1 150.61 156a34.63 34.63 0 0 1-33.69-26.72a12 12 0 0 0-23.38 5.44A58.64 58.64 0 0 0 150.56 180h.05a58.28 58.28 0 0 0 41.47-17.17l34.75-34.75a58.62 58.62 0 0 0 0-82.91"
+          />
+        </svg>
+        <span>Dev-Tino</span>
+      </button>
+      <div class="flex gap-[7px] pt-[25px]">
+        <div class="flex flex-col gap-[5px]">
+          <img src="/public/images/teams/play-tino.svg" alt="play-tino" />
+          <div class="text-[#4B4B4B] text-2xs font-medium">- Play-Tino</div>
+        </div>
+        <div class="flex flex-col gap-[5px]">
+          <img src="/public/images/teams/festino.svg" alt="festino" />
+          <div class="text-[#4B4B4B] text-2xs font-medium">- Festino</div>
+        </div>
+      </div>
+    </div>
     <div class="flex flex-col w-full items-center justify-center px-6 gap-4 pt-6 pb-16">
       <div class="text-primary-900 text-2xl font-bold">REVIEW</div>
       <div class="text-secondary-700 text py-4 text-center">
@@ -51,7 +181,7 @@ const handleClickReviewSubmit = async () => {
       </div>
       <textarea
         placeholder="내용을 작성해주세요."
-        class="text-xs border-1 border-gray-200 rounded w-full px-4 py-4 h-[200px] resize-none"
+        class="text-xs border border-gray-200 rounded w-full px-4 py-4 h-[200px] resize-none"
         maxlength="1000"
         v-model="content"
       ></textarea>
@@ -59,19 +189,18 @@ const handleClickReviewSubmit = async () => {
         <input
           type="text"
           placeholder="이메일 (선택사항)"
-          class="text-xs rounded-lg border-1 border-gray-200 px-4 w-[200px] h-[33px] align-middle"
+          class="text-xs rounded-lg border border-gray-200 px-4 w-[200px] h-[33px] align-middle"
           v-model="email"
         />
         <button
-          class="text-primary-900 w-[112px] h-[33px] flex items-center justify-center rounded-lg border-1 border-gray-200 gap-2 py-4"
+          class="text-primary-900 w-[112px] h-[33px] flex items-center justify-center rounded-lg border border-gray-200 gap-2 py-4"
           type="button"
-          @click="handleClickReviewSubmit()"
+          @click="handleClickReviewSubmit"
         >
           <img src="/images/teams/send.svg" /> 보내기
         </button>
       </div>
     </div>
-    <!-- <div class="w-full min-h-screen bg-teams grow bg-cover"></div> -->
   </div>
 </template>
 
