@@ -196,16 +196,16 @@ const markers = ref({
     food: [
       // 주간부스
       // 푸드트럭
-      { markerNum: 51, left: 420, bottom: 227, scrollLeft: 925, scrollTop: 470 },
-      { markerNum: 52, left: 420, bottom: 207, scrollLeft: 925, scrollTop: 530 },
-      { markerNum: 53, left: 420, bottom: 187, scrollLeft: 925, scrollTop: 590 },
-      { markerNum: 54, left: 420, bottom: 167, scrollLeft: 925, scrollTop: 650 },
-      { markerNum: 55, left: 420, bottom: 147, scrollLeft: 925, scrollTop: 710 },
-      { markerNum: 56, left: 420, bottom: 127, scrollLeft: 925, scrollTop: 770 },
-      { markerNum: 57, left: 450, bottom: 127, scrollLeft: 1000, scrollTop: 770 },
-      { markerNum: 58, left: 450, bottom: 147, scrollLeft: 1000, scrollTop: 710 },
-      { markerNum: 59, left: 450, bottom: 167, scrollLeft: 1000, scrollTop: 650 },
-      { markerNum: 60, left: 470, bottom: 167, scrollLeft: 1070, scrollTop: 650 },
+      { markerNum: 57, left: 420, bottom: 233, scrollLeft: 925, scrollTop: 410 },
+      { markerNum: 58, left: 420, bottom: 215, scrollLeft: 925, scrollTop: 470 },
+      { markerNum: 55, left: 420, bottom: 197, scrollLeft: 925, scrollTop: 530 },
+      { markerNum: 52, left: 420, bottom: 179, scrollLeft: 925, scrollTop: 590 },
+      { markerNum: 59, left: 420, bottom: 161, scrollLeft: 925, scrollTop: 650 },
+      { markerNum: 56, left: 420, bottom: 143, scrollLeft: 925, scrollTop: 710 },
+      { markerNum: 53, left: 420, bottom: 125, scrollLeft: 925, scrollTop: 770 },
+      { markerNum: 51, left: 450, bottom: 127, scrollLeft: 1000, scrollTop: 770 },
+      { markerNum: 54, left: 450, bottom: 147, scrollLeft: 1000, scrollTop: 710 },
+      { markerNum: 60, left: 450, bottom: 167, scrollLeft: 1000, scrollTop: 650 },
     ],
   },
 });
