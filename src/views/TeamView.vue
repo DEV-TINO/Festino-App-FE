@@ -12,7 +12,7 @@ const openDevTino = () => {
   window.open('https://github.com/DEV-TINO', '_blank');
 };
 
-const members = [
+const MEMBER = [
   {
     name: '김성준',
     major: '컴퓨터공학부',
@@ -85,14 +85,14 @@ const members = [
   },
   {
     name: '김규리',
-    major: '컴퓨터공학부',
+    major: '디자인공학부',
     position: 'UX/UI팀원',
     image: './images/teams/gyuri.svg',
     blog: '',
   },
   {
     name: '임혜지',
-    major: '컴퓨터공학부',
+    major: '디자인공학부',
     position: 'UX/UI팀원',
     image: './images/teams/hyeji.svg',
     blog: '',
@@ -139,7 +139,7 @@ const handleClickReviewSubmit = async () => {
         한국공학대학교 컴퓨터공학부 9명과<br />디자인공학부 3명으로 제작된 프로젝트
       </div>
       <div class="grid grid-cols-2 w-full sm:px-4 justify-center pt-8 gap-x-2.5 gap-y-4 justify-items-center">
-        <Profile v-for="(member, index) in members" :key="index" :member="member" />
+        <Profile v-for="(member, index) in MEMBER" :key="index" :member="member" />
       </div>
     </div>
 
@@ -195,7 +195,7 @@ const handleClickReviewSubmit = async () => {
         <button
           class="text-primary-900 w-[112px] h-[33px] flex items-center justify-center rounded-lg border border-gray-200 gap-2 py-4"
           type="button"
-          @click="handleClickReviewSubmit"
+          @click="handleClickReviewSubmit()"
         >
           <img src="/images/teams/send.svg" /> 보내기
         </button>
